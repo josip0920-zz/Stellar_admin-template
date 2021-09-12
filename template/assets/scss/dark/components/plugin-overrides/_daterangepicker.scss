@@ -1,0 +1,108 @@
+.daterangepicker {
+	background-color: #4f4f53;
+	border: 1px solid $border-color;
+	&:before {
+		border-bottom: 7px solid $border-color;
+	}
+	&:after {
+		border-bottom: 6px solid $border-color;
+	}
+	&.drop-up {
+		&:before {
+			border-top: 7px solid $border-color;
+		}
+		&:after {
+			border-top: 6px solid $border-color;
+		}
+	}
+	.calendar-table {
+		border: none;
+		background-color: $body-color-dark;
+	}
+	td {
+		&.in-range {
+			background-color: darken($body-color-dark, 10%);
+			color: $white;
+		}
+	}
+	.calendar-time {
+		select {
+			&.disabled {
+				color: #ccc;
+			}
+		}
+	}
+	.drp-buttons {
+		border-top: 1px solid #3e3e41;
+	}
+	&.show-ranges {
+		&.single {
+			&.rtl {
+				.drp-calendar {
+					&.left {
+						border-right: 1px solid #3e3e41;
+					}
+				}
+			}
+			&.ltr {
+				.drp-calendar {
+					&.left {
+						border-left: 1px solid #3e3e41;
+					}
+				}
+			}
+		}
+		&.rtl {
+			.drp-calendar {
+				&.right {
+					border-right: 1px solid #3e3e41;
+				}
+			}
+		}
+		&.ltr {
+			.drp-calendar {
+				&.left {
+					border-left: 1px solid #3e3e41;
+				}
+			}
+		}
+	}
+	.ranges {
+		li {
+			&:hover {
+				background-color:darken(#4f4f53, 10%);
+			}
+			&.active {
+				background-color: #08c;
+				color: #fff;
+			}
+		}
+	}
+}
+.daterangepicker:before, .daterangepicker:after {
+    border-bottom-color: #4f4f53;
+}
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+	color: #4f4f53;
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+	background-color: darken(#4f4f53, 10%);
+}
+.daterangepicker td.week, .daterangepicker th.week {
+	color: #ccc;
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+	background-color: #4f4f53;
+	color: #999;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+	background-color: #357ebd;
+	color: #fff;
+}
+.daterangepicker td.disabled, .daterangepicker option.disabled {
+	color: #999;
+}
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
+	background: #4f4f53;
+	border: 1px solid #4f4f53;
+}
